@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+    ipsec-client:
+        container_name: ipsec-client
+        build: .
+        cap_add:
+            - NET_ADMIN
+        devices:
+            - /dev/net/tun
+        environment:
+            - SERVER_HOST=
+            - SERVER_GROUP_NAME=
+            - SERVER_SECRET=
+            - SERVER_USERNAME=
+            - SERVER_PASSWORD=
