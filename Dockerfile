@@ -1,6 +1,6 @@
 FROM madebytimo/base
 
-RUN apt update -qq && apt install -y -qq vpnc \
+RUN apt update -qq && apt install -y -qq procps vpnc \
     && rm -rf /var/lib/apt/lists/*
 
 ENV SERVER_HOST=""
