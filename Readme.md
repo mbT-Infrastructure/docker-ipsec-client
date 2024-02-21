@@ -13,6 +13,8 @@ stack like described in the [documentation](https://docs.docker.com/network/#con
     -   IP or name of the IPSec gateway.
 -   `SERVER_GROUP_NAME`
     -   IPSec group name.
+-   `SERVER_ROUTE`
+    -   Route for the IPSec vpn in CIDR notation, default: `0.0.0.0/0`.
 -   `SERVER_SECRET`
     -   IPSec group password.
 -   `SERVER_USERNAME`
