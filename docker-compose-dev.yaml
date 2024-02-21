@@ -7,8 +7,6 @@ services:
         build: .
         cap_add:
             - NET_ADMIN
-        devices:
-            - /dev/net/tun
         environment:
             - SERVER_HOST=
             - SERVER_GROUP_NAME=
