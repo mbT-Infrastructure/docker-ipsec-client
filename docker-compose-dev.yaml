@@ -13,3 +13,4 @@ services:
             - SERVER_SECRET=
             - SERVER_USERNAME=
             - SERVER_PASSWORD=
+            - SOCAT_ARGUMENTS=TCP4-LISTEN:8000,fork,reuseaddr TCP4:google.com:80

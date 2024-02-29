@@ -1,8 +1,10 @@
 # ipsec-client image
 
-This Container image extends the [base image](https://github.com/mbT-Infrastructure/docker-base).
+This Container image extends the [socat image](https://github.com/mbT-Infrastructure/docker-socat).
+Make sure to also configure environment variables, ports and volumes from that image.
 
-This image contains a vpnc install to connect to IPSec vpns.
+This image contains a vpnc install to connect to IPSec vpns. Additionally it contains a socat
+install to allow forwarding of ports to hosts in the vpn.
 
 To put another container behind a vpn use this container and attach it to the container's networking
 stack like described in the [documentation](https://docs.docker.com/network/#container-networks).

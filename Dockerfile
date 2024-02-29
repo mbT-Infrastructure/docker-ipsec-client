@@ -1,4 +1,4 @@
-FROM madebytimo/base
+FROM madebytimo/socat
 
 RUN apt update -qq && apt install -y -qq procps vpnc \
     && rm -rf /var/lib/apt/lists/*
